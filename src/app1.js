@@ -3,7 +3,7 @@ import "./app1.css";
 const $span = $(".output>span");
 const $btn1 = $(".add");
 const n = localStorage.getItem("n");
-$span.text(n);
+$span.text(n || 100);
 $btn1.on("click", () => {
   let n = parseInt($span.text());
   n += 1;
