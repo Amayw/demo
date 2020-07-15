@@ -1,0 +1,18 @@
+#app2 ol {
+  display: flex;
+}
+.tabbar {
+  border: 2px solid #333;
+  display: flex;
+  justify-content: space-around;
+}
+.contentbar > li {
+  display: none;
+}
+.selected {
+  background-color: orange;
+}
+
+.contentbar > li.active {
+  display: block;
+}

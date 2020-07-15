@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page > div {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid deeppink;
+}
+
+#app2 ol {
+  display: flex;
+}
+.tabbar {
+  border: 2px solid #333;
+  display: flex;
+  justify-content: space-around;
+}
+.contentbar > li {
+  display: none;
+}
+.selected {
+  background-color: orange;
+}
+
+.contentbar > li.active {
+  display: block;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  transition: 1s;
+}
+#app3 .active {
+  transform: translateX(50px);
+}
+
+#app4 .circle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid orange;
+  border-radius: 50%;
+}
+@keyframes change {
+  from {
+    background: yellow;
+  }
+  to {
+    background: orange;
+  }
+}
+#app4 .active {
+  animation: change 1s infinite alternate;
+}
+
+
+/*# sourceMappingURL=main.deb98562.css.map */

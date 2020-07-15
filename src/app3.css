@@ -1,0 +1,9 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  transition: 1s;
+}
+#app3 .active {
+  transform: translateX(50px);
+}
